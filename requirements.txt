@@ -1,18 +1,16 @@
-echo fastapi> requirements.txt
-echo uvicorn>> requirements.txt
-echo websockets>> requirements.txt
-echo solace-pubsubplus>> requirements.txt
-echo pydantic>> requirements.txt
-
-
-# SolEngineer is My Own Solace tool designed by Varun 
-# Run Commands
-# For React UI Will Use npm start commands
-# cd src 
-# cd solengineer 
-# cd ui
-# npm start
-
-#For Backend
-# cd src
-# python -m solengineer.launch
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.12.1
+click==8.3.1
+colorama==0.4.6
+fastapi==0.135.1
+h11==0.16.0
+idna==3.11
+pydantic==2.12.5
+pydantic_core==2.41.5
+solace-pubsubplus==1.11.0
+starlette==0.52.1
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+uvicorn==0.41.0
+websockets==16.0
