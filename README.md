@@ -1,30 +1,26 @@
 # SolEngineer
+
+![Status](https://img.shields.io/badge/status-active_development-orange)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![React](https://img.shields.io/badge/react-18-blue)
+![Docker](https://img.shields.io/badge/docker-supported-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 ## Project Status
 
-🚧 Active Development
+🚧 **Active Development**
 
 SolEngineer is currently under active development.
-Features and APIs may evolve before the first stable release.
 
-# SolEngineer
-
-A browser-based developer tool for publishing, subscribing, consuming queues, and benchmarking **Solace PubSub+ Event Broker** using the official **Solace Python SDK**.
+Features, APIs, and user interfaces may evolve before the first stable release.
 
 ---
 
 ## Overview
 
-SolEngineer helps developers quickly validate message flows, troubleshoot broker connectivity, and run SDK-level performance benchmarks without writing custom scripts.
+SolEngineer is a browser-based developer tool for publishing, subscribing, consuming queues, and benchmarking **Solace PubSub+ Event Broker** using the official **Solace Python SDK**.
 
-It provides a modern web interface to:
-
-- Publish messages to topics
-- Subscribe to topics in real time
-- Consume messages from queues
-- Save and reuse broker profiles
-- Replay published messages
-- Run SDK-level performance tests
-- Measure throughput and latency metrics
+It helps developers quickly validate message flows, troubleshoot broker connectivity, and run SDK-level performance benchmarks without writing custom scripts.
 
 All from a single dashboard.
 
@@ -50,7 +46,7 @@ All from a single dashboard.
 
 ## Performance Testing
 
-Configure and run SDK performance tests with the following parameters:
+Configure and run SDK performance tests with the following parameters.
 
 ### Configuration
 
@@ -114,15 +110,23 @@ Configure and run SDK performance tests with the following parameters:
 | Frontend | React 18, TypeScript |
 | Real-Time Communication | WebSockets |
 | Storage | Local JSON Files |
+| Containerization | Docker, Docker Compose |
 
 ---
 
 ## Prerequisites
 
+### Development Mode
+
 - Python 3.10+
 - Node.js 18+
 - npm 8+
 - Solace PubSub+ Cloud Account or On-Prem Broker
+
+### Docker Mode
+
+- Docker Desktop 4.x or later
+- Docker Compose
 
 ---
 
@@ -156,7 +160,7 @@ source venv/bin/activate
 ### 3. Install Backend Dependencies
 
 ```bash
-pip install fastapi uvicorn websockets solace-pubsubplus pydantic
+pip install -r requirements.txt
 ```
 
 ### 4. Install Frontend Dependencies
@@ -219,6 +223,30 @@ Open:
 ```text
 http://localhost:3000
 ```
+
+---
+
+## Docker
+
+### Build and Run
+
+```bash
+docker compose up --build
+```
+
+Open:
+
+```text
+http://localhost:8000
+```
+
+### Stop
+
+```bash
+docker compose down
+```
+
+Docker bundles the FastAPI backend and React frontend into a single container, making deployment and evaluation easier.
 
 ---
 
@@ -298,17 +326,16 @@ SolEngineer/
 │       │   └── perf_tester.py
 │       │
 │       ├── data/
-│       │   ├── profiles.json
-│       │   └── history.json
 │       │
 │       ├── ui/
-│       │   └── src/
-│       │       └── components/
 │       │
 │       └── launch.py
 │
+├── Dockerfile
+├── docker-compose.yml
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 └── .gitignore
 ```
 
@@ -342,6 +369,7 @@ SolEngineer/
 - Throughput chart
 - Export performance results as JSON
 - Auto-reconnect on idle connection drops
+- Dockerized deployment
 
 ---
 
@@ -352,6 +380,7 @@ SolEngineer/
 - Average latency includes SDK and TCP warm-up effects
 - Designed primarily for single-user usage
 - Broker credentials are stored locally in JSON files
+- Not yet intended for production deployment
 
 ---
 
@@ -365,10 +394,14 @@ SolEngineer/
 - CSV export for benchmark results
 - Dark mode UI
 - Multi-user profile support
+- GitHub Actions CI/CD pipeline
+- Docker Hub image publishing
 
 ---
 
-## Dependencies
+## Key Dependencies
+
+### Backend
 
 ```text
 fastapi
@@ -376,7 +409,28 @@ uvicorn
 websockets
 solace-pubsubplus
 pydantic
-react
-typescript
 ```
 
+### Frontend
+
+```text
+react
+typescript
+react-scripts
+```
+
+---
+
+## Contributing
+
+SolEngineer is currently under active development.
+
+Bug reports, feature requests, and feedback are welcome through GitHub Issues and Pull Requests.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
