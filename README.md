@@ -1,4 +1,12 @@
 # SolEngineer
+## Project Status
+
+🚧 Active Development
+
+SolEngineer is currently under active development.
+Features and APIs may evolve before the first stable release.
+
+# SolEngineer
 
 A browser-based developer tool for publishing, subscribing, consuming queues, and benchmarking **Solace PubSub+ Event Broker** using the official **Solace Python SDK**.
 
