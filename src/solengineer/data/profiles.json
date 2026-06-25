@@ -1,9 +1,0 @@
-[
-  {
-    "name": "Mumbai Server",
-    "host": "tcps://mr-connection-78aj3e23q9s.messaging.solace.cloud:55443",
-    "vpn": "server_gc_mumbai",
-    "username": "solace-cloud-client",
-    "password": "ts76atfea1av479tv3oo67dfak"
-  }
-]
