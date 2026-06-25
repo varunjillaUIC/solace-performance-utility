@@ -1,0 +1,12 @@
+services:
+  solengineer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: solengineer
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped

@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Node
+src/solengineer/ui/node_modules/
+src/solengineer/ui/build/
+
+# Secrets
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

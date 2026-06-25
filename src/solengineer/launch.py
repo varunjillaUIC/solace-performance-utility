@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print("🚀 SolEngineer starting...")
     print("📡 Backend  → http://localhost:8000")
     print("📄 API docs → http://localhost:8000/docs")
-    print("🌐 UI       → http://localhost:3000  (run npm start in ui folder)")
+    print("🌐 UI       → http://localhost:3000  ")
     uvicorn.run(
         "solengineer.api.main:app",
         host="0.0.0.0",

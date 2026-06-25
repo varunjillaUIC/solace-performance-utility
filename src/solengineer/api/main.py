@@ -56,3 +56,21 @@ def disconnect():
 # ui_dist = os.path.join(os.path.dirname(__file__), "../../solengineer/ui/dist")
 # if os.path.exists(ui_dist):
 #     app.mount("/", StaticFiles(directory=ui_dist, html=True), name="ui")
+
+# Serve React production build
+
+ui_build = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "ui",
+        "build"
+    )
+)
+
+if os.path.exists(ui_build):
+    app.mount(
+        "/",
+        StaticFiles(directory=ui_build, html=True),
+        name="ui"
+    )
