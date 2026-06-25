@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# SolEngineer Data
+src/solengineer/data/profiles.json
+src/solengineer/data/history.json
+
+# React
+src/solengineer/ui/node_modules/
+src/solengineer/ui/build/
+src/solengineer/ui/dist/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
