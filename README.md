@@ -109,30 +109,6 @@ Configure and run SDK performance tests with the following parameters:
 
 ---
 
-## Screenshots
-
-### Connection Manager
-
-_Add screenshot here_
-
-### Publisher
-
-_Add screenshot here_
-
-### Subscriber
-
-_Add screenshot here_
-
-### Queue Consumer
-
-_Add screenshot here_
-
-### Performance Testing
-
-_Add screenshot here_
-
----
-
 ## Prerequisites
 
 - Python 3.10+
