@@ -372,16 +372,3 @@ react
 typescript
 ```
 
----
-
-## Author
-
-**Varun Jilla**
-
-Built as a developer productivity tool for Solace PubSub+ integration engineering, troubleshooting, validation, and SDK performance benchmarking.
-
----
-
-## License
-
-MIT License
