@@ -1,0 +1,69 @@
+:root {
+  /* Colors — Brand */
+  --color-primary:        #1a73e8;
+  --color-primary-light:  #e8f0fe;
+  --color-primary-border: #c2d8fb;
+
+  --color-success:        #00874a;
+  --color-success-light:  #e8f7ef;
+  --color-success-border: #b8e6cc;
+
+  --color-warning:        #e8710a;
+  --color-warning-light:  #fef3e0;
+  --color-warning-border: #fcd9a0;
+
+  --color-danger:         #d93025;
+  --color-danger-light:   #fce8e6;
+  --color-danger-border:  #f5b9b3;
+
+  --color-purple:         #7c4dff;
+  --color-purple-light:   #ede7ff;
+
+  /* Colors — Neutral */
+  --color-bg:             #f4f6f9;
+  --color-surface:        #ffffff;
+  --color-surface-2:      #f9fafb;
+  --color-border:         #e1e6eb;
+  --color-border-2:       #dde2e8;
+  --color-border-3:       #eef0f3;
+
+  /* Colors — Text */
+  --color-text-primary:   #1a2733;
+  --color-text-secondary: #5a6675;
+  --color-text-muted:     #8a96a3;
+  --color-text-faint:     #b0b8c0;
+
+  /* Sidebar */
+  --color-sidebar-bg:     #ffffff;
+  --color-sidebar-border: #e1e6eb;
+  --color-nav-active-bg:  #e8f0fe;
+  --color-nav-active:     #1a73e8;
+
+  /* Spacing */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  --text-xs:   10px;
+  --text-sm:   11px;
+  --text-base: 13px;
+  --text-md:   14px;
+  --text-lg:   15px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
